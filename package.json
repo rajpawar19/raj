@@ -1,0 +1,31 @@
+{
+  "name": "qar",
+  "version": "1.0.0",
+  "description": "This framework is related to cypress automation and used for the POC and as a working model with cypress.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:": "cypress run --browser chrome integrationFolder=e2e/features/POS_QAAutomation.feature"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Testing",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.4",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/StepDefinitions/*.js",
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "devDependencies": {
+    "cypress": "^13.3.2"
+  }
+}
