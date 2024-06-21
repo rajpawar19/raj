@@ -14,8 +14,6 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     baseUrl:'https://magento.softwaretestingboard.com/',
-    username: 'mariambutt2023@gmail.com',
-    password: 'Meta@7/11!',
     specPattern: "cypress/e2e/features/*.feature",
     watchForFileChanges:false,
     chromeWebSecurity: false,
